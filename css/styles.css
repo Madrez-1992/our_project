@@ -1,0 +1,84 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+} 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f6f3f1;
+}
+
+/* Хедер */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 20px 60px;
+}
+
+/* Навігаційний контейнер */
+.nav {
+  display: flex;
+  align-items:center;
+  /* margin-left: -375px; */
+  justify-content: space-between;
+}
+
+/* Логотип */
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: -0.5px;
+}
+
+.logo span {
+  font-weight: 400;
+}
+
+/* Навігаційний список */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+   margin-left: auto; 
+  margin-right: 80px;      /* але залишає відступ для кнопки */
+  align-items: center;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.nav-list a:hover {
+  opacity: 0.6;
+}
+
+/* Кнопка */
+.nav-button {
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.nav-button:hover {
+  background-color: #ef9834; 
+  transform: scale(1.02);
+}
